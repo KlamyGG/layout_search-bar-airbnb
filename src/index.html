@@ -10,23 +10,38 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search bar</title>
     <link
       rel="stylesheet"
       href="style.css"
     />
   </head>
   <body>
-    <input
-      type="text"
-      data-qa="keypress"
-      placeholder="Try “Los Angeles“"
-    />
-
-    <input
-      type="text"
-      data-qa="hover"
-      placeholder="Try “Los Angeles“"
-    />
+    <form
+      class="search_bar search_bar_big"
+      data-qa="big"
+    >
+      <label class="search_bar_label search_bar_label_big">
+        <input
+          placeholder="Try “Los Angeles“"
+          class="search_bar_input search_bar_input_big"
+          data-qa="keypress"
+          type="text"
+        />
+      </label>
+    </form>
+    <form
+      class="search_bar search_bar_small"
+      data-qa="small"
+    >
+      <label class="search_bar_label search_bar_label_small">
+        <input
+          placeholder="Try “Los Angeles“"
+          class="search_bar_input search_bar_input_small"
+          type="text"
+          data-qa="keypress"
+        />
+      </label>
+    </form>
   </body>
 </html>

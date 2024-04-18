@@ -10,7 +10,7 @@
       http-equiv="X-UA-Compatible"
       content="ie=edge"
     />
-    <title>Document</title>
+    <title>Search bar</title>
     <link
       rel="stylesheet"
       href="style.css"
@@ -18,37 +18,28 @@
   </head>
   <body>
     <form
-      class="search__bar big__bar"
-      method="post"
+      class="search_bar search_bar_big"
       data-qa="big"
     >
-      <label
-        for="biginput"
-        class="big"
-      >
+      <label class="search_bar_label search_bar_label_big">
         <input
-          class="search__input big--input"
-          type="text"
-          name="biginput"
+          placeholder="Try “Los Angeles“"
+          class="search_bar_input search_bar_input_big"
           data-qa="keypress"
-          placeholder="Try “Los Angeles”"
+          type="text"
         />
       </label>
     </form>
     <form
-      class="search__bar search__bar--small"
-      method="post"
+      class="search_bar search_bar_small"
       data-qa="small"
     >
-      <label
-        for="smallinput"
-        class="small"
-      >
+      <label class="search_bar_label search_bar_label_small">
         <input
-          class="search__input search__input--small"
+          placeholder="Try “Los Angeles“"
+          class="search_bar_input search_bar_input_small"
           type="text"
-          name="smallinput"
-          placeholder="Try “Los Angeles”"
+          data-qa="keypress"
         />
       </label>
     </form>
